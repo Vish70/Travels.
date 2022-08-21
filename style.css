@@ -67,6 +67,7 @@ header{
     align-items: center;
     margin: auto;
     width:98%;
+    /* z-index:12000; */
 }
 
 .search_form{
@@ -157,6 +158,7 @@ input{
 .search_input{
     border-right:1px solid var(--lightgrey);
     padding:0rem .4rem;
+    color:var(--lightgrey);
 }
 .btn_search img{
     width:35px;
@@ -191,6 +193,10 @@ transform: translateX(0px);
     margin-bottom:.7rem;
     border-radius:0px;
 }
+.second_search_bar{
+    color:var(--lightgrey);
+}
+
 .search_h4{
     position: relative;
     margin:2rem;
