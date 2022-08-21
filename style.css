@@ -233,7 +233,7 @@ margin:1rem;
 
 .second_form{
     position:absolute;
-    left:-110%;
+    top:-110%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -645,7 +645,7 @@ background-color:var(--lightgrey);
 
     .second_form.active{
         position: absolute;
-        left:0%;
+        top:0%;
         top:-25%;
     }
 
