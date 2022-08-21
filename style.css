@@ -291,7 +291,7 @@ color:var(--yellow);
 /* //////////////   Hero section  ////////////// */
 
 .bg_container{
-    background-image:url('/images/pexels-jaime-reimer-2662116.jpg');
+    background-image:url('images/pexels-jaime-reimer-2662116.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
