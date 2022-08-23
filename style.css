@@ -328,7 +328,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;    
-margin:11% auto;
+margin:10% auto;
 width:100%;
 padding:.4rem;
 }
@@ -949,7 +949,7 @@ background-color:var(--lightgrey);
         /* //////////////   hero    /////////// */
 
         .bg_container{
-            height:70vh;
+            height:60vh;
         }
         .text h1{
             font-size:3.3rem;
@@ -980,7 +980,7 @@ background-color:var(--lightgrey);
     /* //////////////   hero    /////////// */
 
     .bg_container{
-        height:65vh;
+        height:60vh;
     }
     .text h1{
         font-size:3rem;
@@ -990,7 +990,7 @@ background-color:var(--lightgrey);
     }
 
     .text{
-        margin:10% auto;
+        margin:14% auto;
     }
     .bttn_explore{
         margin-top:1rem;
@@ -1047,7 +1047,7 @@ background-color:var(--lightgrey);
 /* //////////////   hero    /////////// */
 
     .bg_container{
-        height:65vh;
+        height:55vh;
     }
     .text h1{
         font-size:2.5rem;
@@ -1056,7 +1056,7 @@ background-color:var(--lightgrey);
         max-width:470px;
     }
 .text{
-    margin:10% auto;
+    margin:14% auto;
 }
 .bttn_explore{
     margin-top:1rem;
@@ -1124,7 +1124,7 @@ height:220px;
 /* //////////////   hero    /////////// */
 
 .bg_container{
-    height:65vh;
+    height:55vh;
 }
 .text h1{
     font-size:2.4rem;
@@ -1133,7 +1133,7 @@ height:220px;
     max-width:470px;
 }
 .text{
-    margin:13% auto;
+    margin:14% auto;
     text-align: center;
 }
 .bttn_explore{
@@ -1234,7 +1234,7 @@ height:200px;
 /* //////////////   hero    /////////// */
 
 .bg_container{
-    height:65vh;
+    height:55vh;
 }
 .text h1{
     font-size:2.3rem;
@@ -1245,7 +1245,7 @@ height:200px;
     font-size:.8rem;
 }
 .text{
-    margin:18% auto;
+    margin:14% auto;
     text-align: center;
 }
 .bttn_explore{
@@ -1353,7 +1353,7 @@ height:170px;
     /* //////////////   hero    /////////// */
 
 .bg_container{
-    height:65vh;
+    height:55vh;
 }
 .text h1{
     font-size:2.1rem;
@@ -1524,7 +1524,7 @@ height:160px;
 /* /////////  hero   //////////// */
 
     .bg_container{
-        height:65vh;
+        height:55vh;
     }
 
 .bttn_explore{
