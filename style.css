@@ -33,15 +33,7 @@ body{
     height:57px;
     filter: drop-shadow(0px 6.5px 2px rgba(0,0,0,0.2));
     padding:.3rem;
-    position: relative;
     /* transform:rotate(-1deg); */
-}
-.logo i{
-    position: absolute;
-    left:5rem;
-    transform: rotate-(40deg);
-    color: #ce9437c9;
-    font-size:1.2rem;
 }
 .logo img{
     width:100%;
@@ -67,17 +59,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(253, 253, 253);
-box-shadow:4px 4px 4px rgba(0,0,0,0.1),-4px -4px 8px rgba(0,0,0,0.1),inset 2px 2px 2px rgba(0,0,0,0.1);
-    /* box-shadow:0px 2px 2px 1.7px rgba(0,0,0,0.1); */
+    background-color:rgba(253, 253, 253, 0.966);
+    box-shadow:0px 1px 1px 1.3px rgba(0,0,0,0.2);
     grid-row-gap:0rem;
-    position: relative;
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    margin: auto;
-    z-index:12000;
 }
 .container{
     display:flex;
@@ -213,7 +197,7 @@ transform: translateX(0px);
     border-radius:0px;
 }
 .second_search_bar{
-    color:var(--black);
+    color:var(--lightgrey);
 }
 
 .search_h4{
@@ -335,8 +319,7 @@ color:var(--yellow);
 
 .overly{
     position: absolute;
-    background: linear-gradient(to right,rgba(49, 49, 49, 0.459),#f6f6f64f,rgba(49, 49, 49, 0.404));
-    /* background-color:rgba(0,0,0,0.3); */
+    background-color:rgba(0,0,0,0.3);
     width:100%;
     height:100%;
 }
@@ -345,7 +328,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;    
-margin:15% auto;
+margin:10% auto;
 width:100%;
 padding:.4rem;
 }
@@ -358,7 +341,7 @@ padding:.4rem;
 .text p{
     /* width:auto; */
     max-width:800px;
-    color:rgba(255, 255, 255, 0.979);
+    color:var(--lightgrey);
     font-size:.9rem;
     font-family: var(--popinsfont);
     letter-spacing: 1px;
@@ -368,10 +351,10 @@ padding:.4rem;
     color:var(--yellow);
 }
 .bttn_explore .exp{
-    background-color: rgba(34, 34, 34, 0.849);
+    background-color: rgb(236, 236, 236);
 /* background-color:#f3c44c; */
 cursor: pointer;
-color:rgb(250, 250, 250);
+color:rgb(32, 31, 31);
 font-size:1.1rem;
 padding:.3rem 1rem;
 font-weight: 400;
@@ -379,11 +362,10 @@ outline:none;
 border:none;
 letter-spacing:1px;
 font-family: var(--popinsfont);
-border-radius:2px;
 }
 .bttn_explore{
-    border-left:4px solid rgba(224, 178, 27, 0.931);
-    /* border-right:3px solid var(--yellow); */
+    border-left:3px solid var(--yellow);
+    border-right:3px solid var(--yellow);
     margin-top:2rem;
 }
 
@@ -393,7 +375,7 @@ border-radius:2px;
 
 .container_desti{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-column-gap:.4rem;
     grid-row-gap:1rem;
     width:95%;
@@ -419,7 +401,7 @@ border-radius:2px;
 }
 
 .img{
-    width:250px;
+    width:220px;
     height:160px;
 }
 .img img{
@@ -467,10 +449,6 @@ border-radius:2px;
 
 /* ///////////////    Tours places     //////////////// */
 
-.tour{
-    background-color:rgba(224, 224, 224, 0.349);
-    padding-bottom:1rem;
-}
 
 .tour .name{
     text-align: left;
@@ -489,9 +467,9 @@ border-radius:2px;
 
 .tour_container{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     /* grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); */
-    grid-column-gap:.6rem;
+    grid-column-gap:.3rem;
     grid-row-gap:1rem;
     width:95%;
     margin:auto;
@@ -501,26 +479,24 @@ border-radius:2px;
 .tour_img{
     position: relative;
     width:100%;
-    height:190px;
+    height:150px;
 }
 .tour_img img{
     position: relative;
     width:100%;
     z-index: -100;
     height:100%;
-    border-radius:3px;
 }
 .tour_place{
     position: relative;
     /* border:2px solid var(--yellow); */
     border-radius:3px;
-    padding:.3rem;
+    padding:.2rem;
     text-align: center;
 }
 .overly_tour{
     position: absolute;
-    background: linear-gradient(to right,rgba(49, 49, 49, 0.15),#f6f6f671,rgba(49, 49, 49, 0.164));
-    /* background-color:rgba(0, 0, 0, 0.3); */
+    background-color:rgba(0, 0, 0, 0.3);
     width:100%;
     height:100%;
     /* z-index:12000; */
@@ -544,7 +520,7 @@ border-radius:2px;
 }
 .tour_text .text1 span{
     color: var(--midgrey);
-    font-size:.9rem;
+    font-size:.8rem;
     font-weight:500;
     font-family: var(--popinsfont);
 }
@@ -555,7 +531,7 @@ border-radius:2px;
     
 }
 .tour_text p{
-    font-size:.9rem;
+    font-size:.8rem;
     padding:1.1rem 0rem;
     font-family: var(--popinsfont);
 }
@@ -566,26 +542,16 @@ border-radius:2px;
     font-size: 1rem;
     letter-spacing:1px;
     font-weight:400;
-    padding:0rem 5.7rem;
     font-family: var(--popinsfont);
+    padding:.3rem 5rem;
+    border-radius: 2px;
+    background-color: var(--yellow);
+    width:100%;
+    filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.3));
 }
-.tour_place button {
-    text-align: center;
-width:100%;
-outline:none;
-border: none;
-padding:.3rem;
-border-radius: 2px;
-/* background-color:rgba(42, 42, 42, 0.698); */
-background-color: var(--yellow);
-box-shadow:4px 4px 4px rgba(0,0,0,0.1),-4px -4px 8px rgba(0,0,0,0.1),inset 2px 2px 2px rgba(0,0,0,0.1);
-
-/* filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.3)); */
-}
-
 .tour_place{
     text-align: center;
-    background-color: rgb(246, 246, 246);
+    background-color: rgba(255, 255, 255, 0.952);
     filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.3));
 }
 .tour_text{
@@ -670,11 +636,6 @@ box-shadow:4px 4px 4px rgba(0,0,0,0.1),-4px -4px 8px rgba(0,0,0,0.1),inset 2px 2
 
 
 /* ////////////////  About  /////////////// */
-
-.about{
-    background-color:rgba(224, 224, 224, 0.349);
-    padding-bottom:1rem;
-}
 
 .about .name{
     text-align: left;
@@ -801,10 +762,6 @@ footer{
 
 /* /////////////////     @media     //////////////// */
 
-
-
-
-
 @media (max-width:991px){
     
 
@@ -867,80 +824,15 @@ background-color:var(--lightgrey);
     color:var(--black);
 }
 
-header .container{
-    padding:.5rem;
-}
-
-
   /* //////////////   hero    /////////// */
 
   .bg_container{
-    height:75vh;
+    height:80vh;
 }
-
-
-    /* ///////////////    Tours places     //////////////// */
-
-
-    .tour .name{
-        text-align: left;
-        width:55%;
-        border-left:3px solid var(--yellow);
-        padding:.5rem;
-        margin:2rem 1rem;
-    }
-    .tour h2{
-        font-size: 1.4rem;
-        letter-spacing:.8px;
-        font-weight:500;
-        font-family: var(--popinsfont);
-    }
-
-    .tour_place button a{
-        padding:0rem 5rem;
-    }
-    
-        /* ///////////////    hotel places     //////////////// */
-    
-    
-        .hotel .name{
-            text-align: left;
-            width:55%;
-            border-left:3px solid var(--yellow);
-            padding:.5rem;
-            margin:2rem 1rem;
-        }
-        .hotel h2{
-            font-size: 1.4rem;
-            letter-spacing:.8px;
-            font-weight:500;
-            font-family: var(--popinsfont);
-        }
-        
-    
-           /* ///////////////    About us    //////////////// */
-    
-    
-           .about .name{
-            text-align: left;
-            width:55%;
-            border-left:3px solid var(--yellow);
-            padding:.5rem;
-            margin:2rem 1rem;
-        }
-        .about h2{
-            font-size: 1.4rem;
-            letter-spacing:.8px;
-            font-weight:500;
-            font-family: var(--popinsfont);
-        }
-    
-
-
 
 }
 
-@media (max-width:853px){
+@media (max-width:836px){
 
 /* //////////////    head     ////////////////// */
 
@@ -950,11 +842,11 @@ header .container{
     height:55px;
 }
 
-.second_form.active{
-    position:fixed;
-    top:0%;
-    transition: all .4s ease-in;
-}
+    .second_form.active{
+        position: absolute;
+        top:0%;
+    }
+
     .close_nav{
         width:80px;
         height:80px;
@@ -1018,8 +910,9 @@ header .container{
 
 .tour .name{
     text-align: left;
-    width:55%;
+    width:50%;
     border-left:3px solid var(--yellow);
+    /* border-bottom:3px solid var(--yellow); */
     padding:.5rem;
     margin:2rem 1rem;
 }
@@ -1037,6 +930,7 @@ header .container{
         text-align: left;
         width:55%;
         border-left:3px solid var(--yellow);
+        /* border-bottom:3px solid var(--yellow); */
         padding:.5rem;
         margin:2rem 1rem;
     }
@@ -1055,6 +949,7 @@ header .container{
         text-align: left;
         width:55%;
         border-left:3px solid var(--yellow);
+        /* border-bottom:3px solid var(--yellow); */
         padding:.5rem;
         margin:2rem 1rem;
     }
@@ -1125,7 +1020,7 @@ header .container{
 
 
 
-@media (max-width:599px){
+@media (max-width:588px){
 
     .container{
         width:97%;
@@ -1175,99 +1070,55 @@ header .container{
     }
     .text h1{
         font-size:2.5rem;
-        padding:4px;
     }
     .text p{
         max-width:470px;
-        padding:4px;
     }
 .text{
-    margin:16% auto;
+    margin:14% auto;
 }
 .bttn_explore{
     margin-top:1rem;
 }
 
 
-
 /* //////////////  destination  //////////// */
 
 .container_desti {
-    width:97%;
-    /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .img{
-    width:100%;
-    height:170px;
+    width:200px;
+    height:160px;
     cursor: pointer;
 }
-.text_desti h3{
-    font-size:1.3rem;
-}
-.text_desti {
-    position: absolute;
-    top:40%;
-    left:30%;
-}
-.desti1{
-    width:98%;
-}
-
 
 /* /////////////////   Tour place    ////////////////// */
 
 
 .tour_container{
     display: grid;
-grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-grid-column-gap:.4rem;
+grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
 }
-.tour_text .text1{
-    padding-bottom:0rem;
-}
-.tour_text .text1 p{
-    font-size:.8rem;
-}
-
 .tour_img{
-    width:100%;
-    height:185px;
+    width:220px;
 }
-
+.tour_place a{
+    padding:.1rem 3.3rem;
+}
 .tour_place{
-    text-align: center;
     padding-bottom:.3rem;
-    border: none;
-    width:98%;
 }
-.tour_place .tour_text h3{
-    font-size:1.4rem;
-    font-weight: 600;
-}
-
-
 
 /* /////////////////    Hotel    ////////////////// */
 
 .hotel_container{
-    width:97%;
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 }
 .stay_img{
-width:100%;
-height:190px;
-}
-.stay_fac{
-    width:98%;
-}
-
-.stay_fac h3 a{
-    font-size:1.1rem;
-}
-
-.stars_book{
-    justify-content: space-evenly;
+width:220px;
+height:220px;
 }
 
 /* //////////////  about us ////////////// */
@@ -1301,13 +1152,41 @@ height:190px;
     max-width:470px;
 }
 .text{
-    margin:20% auto;
+    margin:14% auto;
     text-align: center;
 }
 .bttn_explore{
     margin-top:1rem;
 }
 
+
+/* /////////////////   Tour place    ////////////////// */
+
+
+.tour_container{
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.tour_img{
+    width:100%;
+}
+.tour_place a{
+    padding:.1rem 2.8rem;
+}
+.tour_place{
+    padding-bottom:.3rem;
+}
+
+/* /////////////////    Hotel    ////////////////// */
+
+.hotel_container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+.stay_img{
+width:200px;
+height:200px;
+}
 
 /* //////////////  about us ////////////// */
 
@@ -1386,13 +1265,84 @@ height:190px;
     font-size:.8rem;
 }
 .text{
-    margin:20% auto;
+    margin:14% auto;
     text-align: center;
 }
 .bttn_explore{
     margin-top:1rem;
 }
 
+/* //////////////  destination  //////////// */
+
+.container_desti {
+    width:97%;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.img{
+    width:160px;
+    height:130px;
+    cursor: pointer;
+}
+.text_desti h3{
+    font-size: 1rem;
+}
+
+/* /////////////////   Tour place    ////////////////// */
+
+
+.tour_container{
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+grid-column-gap:.4rem;
+}
+.tour_text .text1{
+    padding-bottom:0rem;
+}
+.tour_img{
+    width:100%;
+}
+.tour_place a{
+    padding:.1rem 2rem;
+    width:100%;
+    font-size:.9rem;
+}
+.tour_place{
+    text-align: center;
+    padding-bottom:.3rem;
+    border: none;
+}
+.tour_place .tour_text h3{
+    font-size:.9rem;
+}
+
+
+/* /////////////   Tours and travels   //////////// */
+
+
+.tour_text .text1 span{
+    font-size:.8rem;
+}
+.tour_text p{
+    font-size:.8rem;
+}
+
+
+
+/* /////////////////    Hotel    ////////////////// */
+
+.hotel_container{
+    width:97%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+}
+.stay_img{
+width:190px;
+height:170px;
+}
+
+.stay_fac h3 a{
+    font-size:.9rem;
+}
 
 /* //////////////  about us ////////////// */
 
@@ -1418,7 +1368,7 @@ height:190px;
 }
 
 
-@media (max-width:421px){
+@media (max-width:414px){
 
     /* //////////////   hero    /////////// */
 
@@ -1434,7 +1384,7 @@ height:190px;
     font-size:.9rem;
 }
 .text{
-    margin:20% auto;
+    margin:16% auto;
     text-align: center;
     padding-bottom:.2rem;
 }
@@ -1445,28 +1395,32 @@ height:190px;
     padding:.3rem;
 }
 
+/* /////////////////    Hotel    ////////////////// */
+
+.hotel_container{
+    width:97%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+}
+.stay_img{
+width:170px;
+height:170px;
+}
+.stay_fac i{
+    font-size:.7rem;
 }
 
-@media (max-width:407px) {
+/* /////////////   Tours and travels   //////////// */
 
-    
-    /* //////////////   hero    /////////// */
 
-.bg_container{
-    height:55vh;
+.tour_text .text1 span{
+    font-size:.8rem;
 }
-.text h1{
-    font-size:2.1rem;
+.tour_text p{
+    font-size:.8rem;
 }
 
-.text{
-    margin:20% auto;
-    text-align: center;
-    padding-bottom:.2rem;
-}
-.bttn_explore{
-    margin-top:.7rem;
-}
+
 }
 
 
@@ -1508,7 +1462,33 @@ height:190px;
 }
 
 
+    /* /////////////////    Hotel    ////////////////// */
+
+.hotel_container{
+    width:97%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(156px,1fr));
 }
+.stay_img{
+width:156px;
+height:160px;
+}
+
+/* /////////////   Tours and travels   //////////// */
+
+
+.tour_text .text1 span{
+    font-size:.7rem;
+}
+.tour_text p{
+    font-size:.7rem;
+}
+
+}
+
+
+
+
 
 @media (max-width:363px){
 
@@ -1578,6 +1558,55 @@ height:190px;
 
 
 
+/* //////////////  destination  //////////// */
+
+.container_desti {
+    width:97%;
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+}
+.img{
+    width:135px;
+    height:110px;
+    cursor: pointer;
+}
+.text_desti h3{
+    font-size:1rem;
+}
+
+
+
+/* /////////////////   Tour place    ////////////////// */
+
+
+.tour_container{
+    display: grid;
+    width:97%;
+grid-template-columns: repeat(auto-fit,minmax(135px,1fr));
+}
+.tour_img{
+    width:auto;
+}
+.tour_place a{
+    padding:.1rem 1.5rem;
+    width:100%;
+    /* margin-left:-1.9rem; */
+}
+.tour_place{
+    text-align: center;
+    padding-bottom:.3rem;
+    border: none;
+}
+.tour_place .tour_text h3{
+    font-size:.9rem;
+}
+
+.tour_text .text1 span{
+    font-size:.7rem;
+}
+.tour_text p{
+    font-size:.7rem;
+}
+
 }
 
 
@@ -1591,10 +1620,10 @@ height:190px;
         position: relative;
       }
       .tour_text .text1 span{
-          font-size:.9rem;
+          font-size:.7rem;
       }
       .tour_text p{
-          font-size:.9rem;
+          font-size:.7rem;
       }
 
       .logo{
@@ -1606,6 +1635,18 @@ height:190px;
 position: relative;
 left:-1rem;
 font-size:.7rem;
+}
+
+        /* /////////////////    Hotel    ////////////////// */
+
+.hotel_container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(156px,1fr));
+}
+.stay_img{
+width:156px;
+height:150px;
+
 }
 
 }
@@ -1633,30 +1674,23 @@ font-size:.7rem;
     text-align: center;
 }
 
-/* /////////   destination   //////////// */
 
-.desti1{
-    width:95%;
+    /* /////////////////    Hotel    ////////////////// */
+
+.hotel_container{
+    width:97%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
 }
-
-/* //////////////  tour place  ////////////// */
-
-.tour_place{
-    width:95%;
+.stay_img{
+width:145px;
+height:150px;
 }
-
-.tour_place button a{
- padding:0rem 5rem;
+.tour_text .text1 span{
+    font-size:.7rem;
 }
-
-/* //////////////  hotel  ////////////// */
-
-.stay_fac{
-    width:95%;
+.tour_text p{
+    font-size:.7rem;
 }
-
-
-
-
 
 }
